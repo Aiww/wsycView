@@ -3,12 +3,12 @@
  * @param {string} type 翻页类型，上、下、左、右
  * @param {string} id 滚动区域的包裹元素的id
  * */
-var projectSwiper;
+var projectSwiper
 function movePage (id) {
   // 放大缩小窗口
   let win_h=$(window).height();
   let win_w=$(window).width();
-  $('.con-item').css({height:win_h+'px'});
+  $('.con-item').css({height:win_h+'px'})
 
   var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
 	var window_height = document.documentElement.clientHeight + scrollTop;
