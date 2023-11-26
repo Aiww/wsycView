@@ -1,8 +1,3 @@
-/**
- * 翻页，每次滚动可视区域的80%高度或宽度（例：滚动区域以id="scroll-panel"元素包裹）
- * @param {string} type 翻页类型，上、下、左、右
- * @param {string} id 滚动区域的包裹元素的id
- * */
 var projectSwiper
 function movePage (id) {
   // 放大缩小窗口
@@ -39,7 +34,7 @@ function watchDirection(){
 // 拖动窗口时触发
 window.onresize = resizeBannerImage;
 function resizeBannerImage() {
-	movePage('home')
+	movePage()
 }
 
 function winScroll(win_h,scrollTop,window_height,win_w){
@@ -117,7 +112,7 @@ $(function() {
   // console.log('窗口可视高度',win_h)
 	$("#home").addClass("active");
   watchDirection()
-	movePage('home')
+	movePage()
   //pro-banner
 	projectSwiper = new Swiper(".pro-banner .swiper-container", {
 		autoplay: 30000,

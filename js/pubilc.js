@@ -25,3 +25,4 @@ $(window).scroll(function(){
       $('.header-box .logo').removeClass('whileColor');
   }
 })
+
